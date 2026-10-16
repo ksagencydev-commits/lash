@@ -1,0 +1,17 @@
+{
+  "name": "eclat-lash-studio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "build": "python3 scripts/build.py",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/browser-qa.cjs",
+    "test:motion": "node scripts/motion-qa.cjs",
+    "test:scroll": "node scripts/scroll-qa.cjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.0"
+  }
+}
